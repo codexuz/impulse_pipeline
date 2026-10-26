@@ -1,0 +1,25 @@
+# Secrets (API keys) — never commit; see .env.example
+.env
+
+# Dependencies and builds
+node_modules/
+remotion/build/
+remotion/out/
+remotion/public/runs/
+__pycache__/
+*.pyc
+
+# Working media and personal data (raw videos, exports, transcripts, poster drafts) — local only.
+# Folder structure is kept with .gitkeep files.
+workspace/**
+!workspace/**/
+!workspace/**/.gitkeep
+
+# Downloaded or generated caches — recreated by the scripts
+assets/ai_generated/
+assets/emoji/fluent3d/
+assets/models/*.onnx
+
+# Third-party reference posters (other people's designs) — local only
+reference/example_edits/sample_posters/*
+!reference/example_edits/sample_posters/.gitkeep

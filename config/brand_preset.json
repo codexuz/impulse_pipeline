@@ -1,0 +1,109 @@
+{
+  "instructor_profile": {
+    "name": "IELTS Instructor",
+    "credentials": "IELTS 8.5 | CELTA Certified",
+    "instagram_handle": "@impulsestudy_lc",
+    "phone_or_telegram": "@impulse_lc",
+    "phone": "95 525 99-66",
+    "telegram": "@impulse_lc"
+  },
+  "brand": {
+    "name": "Impulse Learning Center",
+    "logo_full": "assets/brand/logo_full_white.png",
+    "logo_icon": "assets/brand/logo_icon_white.png",
+    "app_icon": "assets/brand/logo_app_icon.png"
+  },
+  "video_settings": {
+    "resolution": [
+      1080,
+      1920
+    ],
+    "fps": 60,
+    "codec": "h264",
+    "crf": 18,
+    "safe_zone": {
+      "top": 250,
+      "bottom": 450,
+      "left": 120,
+      "right": 120
+    },
+    "bgm_volume": 0.2,
+    "bgm_duck_volume": 0.063
+  },
+  "poster_settings": {
+    "feed_resolution": [
+      1080,
+      1350
+    ],
+    "story_resolution": [
+      1080,
+      1920
+    ],
+    "square_resolution": [
+      1080,
+      1080
+    ],
+    "export_both_feed_and_story": true,
+    "auto_blur_trf_candidate_id": true
+  },
+  "typography": {
+    "heading": "Montserrat",
+    "body": "Inter",
+    "available": [
+      "Montserrat",
+      "Inter",
+      "Poppins",
+      "Unbounded",
+      "Manrope",
+      "Rubik",
+      "Bebas Neue",
+      "Playfair Display",
+      "Nunito",
+      "Oswald"
+    ]
+  },
+  "design": {
+    "emoji_style": "fluent-3d",
+    "emoji_dir": "assets/emoji/fluent3d",
+    "icon_set": "lucide",
+    "corner_radius": 28
+  },
+  "ai_generation": {
+    "flow": {
+      "output_root": "~/flow-mcp-out",
+      "image_model": "Nano Banana",
+      "poster_model": "Nano Banana Pro",
+      "video_model": "Omni 1.1 Flash",
+      "video_max_credits_per_scene": 12,
+      "download_quality": "upscaled",
+      "default_visual_style": "Modern editorial look, clean minimal composition with soft lighting, deep navy and electric blue (#0779FC) accents, high contrast",
+      "sticker_style": "single isolated object centered on a plain pure white background, glossy 3D clay style, no shadow on the background"
+    },
+    "elevenlabs": {
+      "stt_model": "scribe_v2",
+      "stt_language": null,
+      "tts_model": "eleven_multilingual_v2",
+      "sfx_prompt_influence": 0.45,
+      "bgm_default_duration_sec": 15.0
+    }
+  },
+  "colors": {
+    "brand_primary": "#0779FC",
+    "brand_light": "#0099FF",
+    "brand_dark": "#0F56F9",
+    "brand_glow": "#4DB8FF",
+    "primary_text": "#FFFFFF",
+    "background_card": "#0A1631",
+    "card_surface": "#13254A",
+    "highlight_english": "#FFD700",
+    "correct_band8": "#00E676",
+    "mistake_band5": "#FF5252",
+    "award_gold": "#F59E0B"
+  },
+  "figma": {
+    "file_key": "9wddCiUx8nGrplQnK24Jg6",
+    "file_url": "https://www.figma.com/design/9wddCiUx8nGrplQnK24Jg6",
+    "plan_key": "team::1327163490801852491",
+    "note": "Posters are built here: one page per poster_id (scripts/figma/render_poster.js)."
+  }
+}

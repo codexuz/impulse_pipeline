@@ -1,0 +1,25 @@
+{
+  "_about": "Reels muqovasi (faqat Story 1080x1920). Katta sarlavha yuqori uchdan birda, kichik ekranda ham o'qiladi.",
+  "base": "story",
+  "canvas": "$background_card",
+  "formats": {"story": {}},
+  "art": {
+    "description": "",
+    "aspect": "9:16",
+    "keep_clear": "The upper 45% of the frame (below the top 12%) is a calm dark navy area for a very large title; one strong focal subject sits in the lower half."
+  },
+  "styles": {},
+  "texts": {"tag": "", "title": "", "accent": ""},
+  "layers": [
+    {"id": "art", "name": "Artwork (Flow)", "type": "image", "image": "art", "x": 0, "y": 0, "w": 1080, "h": "auto", "locked": true, "shift": false},
+    {"id": "shade", "name": "Readability gradient", "type": "rect", "x": 0, "y": 0, "w": 1080, "h": "55%", "locked": true, "shift": false,
+     "fill": {"gradient": 90, "stops": [["#060E22", 0, 0.92], ["$background_card", 0.6, 0.6], ["$background_card", 1, 0]]}},
+    {"id": "logo", "name": "Logo", "type": "image", "image": "logo", "fit": "FIT", "x": 80, "y": 252, "h": 80, "w": "auto"},
+    {"id": "headline", "name": "Headline", "type": "stack", "gap": 22, "x": 80, "y": 400, "w": 920, "children": [
+      {"id": "tag", "name": "Tag", "type": "text", "text": "{tag}", "style": "SemiBold", "size": 34, "letterSpacing": 8, "case": "upper", "color": "$brand_glow"},
+      {"id": "title", "name": "Title", "type": "text", "text": "{title}\n{accent}", "style": "Black", "size": 128, "lineHeight": 100,
+       "letterSpacing": -2, "color": "#FFFFFF", "w": "fill",
+       "ranges": {"accent": {"style": "Black Italic", "color": {"gradient": 0, "stops": [["$brand_glow", 0], ["$brand_primary", 1]]}}}}
+    ]}
+  ]
+}

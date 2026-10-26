@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+.DS_Store
+.env
+
+# Render vaqtida scripts/remotion_utils.py joylaydigan vaqtinchalik fayllar
+public/runs
+
+# Ignore the output video from Git but not videos you import into src/.
+out

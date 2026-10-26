@@ -1,0 +1,72 @@
+{
+  "_about": "E'lon / Olimpiada / tadbir posteri (Olimpiada 2026 Figma masteridan). Koordinatalar base formatda (feed 1080x1350) px; story avtomatik siljiydi + overrides.",
+  "base": "feed",
+  "canvas": "$background_card",
+  "formats": {
+    "feed": {},
+    "story": {
+      "overrides": {
+        "art": {"y": -8},
+        "logo": {"y": 252, "h": 92},
+        "content": {"bottom": 270},
+        "title": {"size": 104},
+        "subtitle": {"size": 40}
+      }
+    }
+  },
+  "art": {
+    "description": "",
+    "aspect": "9:16",
+    "keep_clear": "The hero object stands in the upper 55% of the frame; the lower 45% is a calm dark navy area (dark rocky ground fading to navy) where the title, chips and contacts will be placed."
+  },
+  "styles": {
+    "chip": {
+      "title": "Info chip",
+      "description": "Sana / vaqt / manzil chipi. Label va Icon xossalari bilan.",
+      "padding": [18, 30, 18, 24], "gap": 14, "radius": 20,
+      "fill": {"color": "#142242", "opacity": 0.78},
+      "stroke": {"color": "$brand_glow", "opacity": 0.7, "weight": 2},
+      "effects": [{"bg_blur": 24}],
+      "icon_size": 36, "icon_color": "$brand_glow",
+      "style": "SemiBold", "size": 32, "color": "#FFFFFF"
+    },
+    "contact": {
+      "title": "Contact item",
+      "description": "Telefon / Telegram / Instagram.",
+      "gap": 12,
+      "icon_size": 34, "icon_color": "$brand_glow",
+      "style": "Medium", "size": 28, "color": "#FFFFFF"
+    }
+  },
+  "texts": {
+    "title": "", "accent": "", "subtitle": "", "date": "", "time": "",
+    "phone": "+998 95 525 99-66", "telegram": "@impulse_lc", "instagram": "@impulsestudy_lc"
+  },
+  "layers": [
+    {"id": "art", "name": "Artwork (Flow)", "type": "image", "image": "art", "x": 0, "y": -250, "w": 1080, "h": "auto", "locked": true, "shift": false},
+    {"id": "shade", "name": "Readability gradient", "type": "rect", "x": 0, "bottom": 0, "w": 1080, "h": "50%", "locked": true, "shift": false,
+     "fill": {"gradient": 90, "stops": [["$background_card", 0, 0], ["$background_card", 0.55, 0.55], ["#060E22", 1, 0.9]]}},
+    {"id": "logo", "name": "Logo", "type": "image", "image": "logo", "fit": "FIT", "x": 80, "y": 64, "h": 88, "w": "auto"},
+    {"id": "content", "name": "Content", "type": "stack", "direction": "vertical", "gap": 34, "x": 80, "bottom": 64, "w": 920,
+     "children": [
+       {"id": "headline", "name": "Headline", "type": "stack", "gap": 18, "w": "fill", "children": [
+         {"id": "title", "name": "Title", "type": "text", "text": "{title}\n{accent}", "style": "Bold", "size": 92,
+          "lineHeight": 104, "letterSpacing": -1.5, "color": "#FFFFFF",
+          "ranges": {"accent": {"style": "Black Italic", "color": {"gradient": 0, "stops": [["$brand_glow", 0], ["$brand_primary", 1]]}}}},
+         {"id": "subtitle", "name": "Subtitle", "type": "text", "text": "{subtitle}", "style": "Regular", "size": 36, "color": "#DEE8F8"}
+       ]},
+       {"id": "chips", "name": "Date & time", "type": "stack", "direction": "horizontal", "gap": 16, "children": [
+         {"id": "date", "name": "Date chip", "type": "item", "style": "chip", "icon": "lucide:calendar", "text": "{date}"},
+         {"id": "time", "name": "Time chip", "type": "item", "style": "chip", "icon": "lucide:clock", "text": "{time}"}
+       ]},
+       {"id": "divider", "name": "Divider", "type": "rect", "w": "fill", "h": 3, "radius": 2,
+        "fill": {"gradient": 0, "stops": [["$brand_glow", 0], ["$brand_primary", 1, 0.35]]},
+        "effects": [{"shadow": "$brand_light", "alpha": 0.8, "radius": 10}]},
+       {"id": "contacts", "name": "Contacts", "type": "stack", "direction": "horizontal", "justify": "between", "align": "center", "w": "fill", "children": [
+         {"id": "phone", "name": "Phone", "type": "item", "style": "contact", "icon": "lucide:phone", "text": "{phone}"},
+         {"id": "telegram", "name": "Telegram", "type": "item", "style": "contact", "icon": "simple-icons:telegram", "text": "{telegram}"},
+         {"id": "instagram", "name": "Instagram", "type": "item", "style": "contact", "icon": "simple-icons:instagram", "text": "{instagram}"}
+       ]}
+     ]}
+  ]
+}

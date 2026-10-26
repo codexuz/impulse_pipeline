@@ -1,0 +1,9 @@
+{
+  "name": "impulse-figma-icons",
+  "private": true,
+  "description": "Icon sources for Figma poster rendering (read by scripts/poster_studio.py)",
+  "dependencies": {
+    "@iconify-json/simple-icons": "1.2.101",
+    "lucide-static": "1.61.0"
+  }
+}

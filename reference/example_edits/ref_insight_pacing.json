@@ -1,0 +1,26 @@
+{
+  "description": "Muvaffaqiyatli IELTS Insight Reels videolarining kadr almashish ritmi (namunaviy o'rtacha qiymatlar)",
+  "target_cut_interval_sec": { "min": 2.5, "max": 3.5 },
+  "max_static_shot_sec": 3.5,
+  "hook": { "end_by_sec": 2.5, "zoom_scale": 1.12, "text_max_words": 6 },
+  "zoom": { "scale_range": [1.0, 1.12], "punch_in_ease_sec": 0.2, "max_per_10_sec": 3 },
+  "sticker": { "on_screen_sec": [2.5, 4.0], "fade_sec": 0.2, "sfx": "pop" },
+  "broll": { "on_screen_sec": [2.0, 3.0], "ken_burns_zoom": [1.0, 1.15], "sfx": "whoosh" },
+  "tts_sample": { "gap_after_teacher_sec": 0.1, "max_len_sec": 4.0 },
+  "cta": { "last_sec": 3.0, "card": "cta", "icon": "MessageCircle", "emoji": "backhand index pointing down" },
+  "by_type": {
+    "insight": { "cut_interval_sec": [2.5, 3.5], "length_sec": [30, 75], "bgm": "lofi_study.mp3" },
+    "promo": { "cut_interval_sec": [2.0, 3.0], "length_sec": [20, 40], "bgm": "energetic_promo.mp3" },
+    "personal_brand": { "cut_interval_sec": [3.0, 4.5], "length_sec": [30, 60], "bgm": "storytelling_warm.mp3" }
+  },
+  "example_timeline": [
+    { "t": 0.0, "event": "hook", "detail": "Hook matni + zoom 1.12x" },
+    { "t": 2.5, "event": "cut", "detail": "zoom 1.0x, ustoz kontekst beradi" },
+    { "t": 4.2, "event": "sticker", "detail": "idioma #1 stikeri + pop" },
+    { "t": 7.1, "event": "tts", "detail": "British talaffuz namunasi" },
+    { "t": 9.4, "event": "card", "detail": "compare: Band 5.5 vs Band 8.0" },
+    { "t": 12.0, "event": "zoom", "detail": "punch-in 1.08x" },
+    { "t": 14.0, "event": "broll", "detail": "AI B-roll Ken Burns + whoosh" },
+    { "t": 17.0, "event": "sticker", "detail": "idioma #2 stikeri + pop" }
+  ]
+}
